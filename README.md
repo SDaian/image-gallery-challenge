@@ -19,6 +19,18 @@ This component contain the main logic to show/hide, make animations or display t
 
 The other main parts of the app are the **auth.service** and **image-search.service** which contain the logic to renew/get the token to make the search and also the logic to maintain in the scope the pagination or the flag to search.
 
+### Desktop views
+
+![image](https://user-images.githubusercontent.com/14813235/109697825-759ff100-7b6d-11eb-977c-b9f52535e3ef.png)
+![image](https://user-images.githubusercontent.com/14813235/109697969-9ff1ae80-7b6d-11eb-8b0f-36550722457f.png)
+
+
+### Mobile views
+
+![image](https://user-images.githubusercontent.com/14813235/109698046-b6980580-7b6d-11eb-8de2-c3ce53c767be.png)
+![image](https://user-images.githubusercontent.com/14813235/109698076-be57aa00-7b6d-11eb-8826-ae696351b5f3.png)
+
+
 ## API Used
 
 > POST /auth
