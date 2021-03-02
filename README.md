@@ -6,22 +6,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Technologies used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Built from the AngularCLI from scratch using v10.0.5, also using addons like 'url-template', ngx-spinner and rxJS.
 
-## Build
+## What I built
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+A grid view using css GRID layout, like you can see on the photos below, in this grid I'm using the cropped_picture which seems to be more ligthweight than the full_picture.
+This grid view is encapsulated under the parent component named **grid-view.component**.
 
-## Running unit tests
+This component contain the main logic to show/hide, make animations or display the full image, which is displayed on a popup.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The other main parts of the app are the **auth.service** and **image-search.service** which contain the logic to renew/get the token to make the search and also the logic to maintain in the scope the pagination or the flag to search.
 
-## Running end-to-end tests
+## API Used
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> POST /auth
 
-## Further help
+> GET /images?page=2
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+> GET /images/${id}
+
+
+## Any suggestion or feedback will be really welcome.
