@@ -1,0 +1,8 @@
+<div class="pagination-container">
+  <span>Total Results: {{pagination.totalCount *10}}</span>
+  <div class="wrapper">
+    <span class="link" (click)="getImages(pagination.actualPage-1)" *ngIf="pagination.actualPage > 1">Previous</span>
+    <span>Page {{pagination.actualPage}} of {{numberOfPages}}</span>
+    <span class="link" (click)="getImages(pagination.actualPage+1)" *ngIf="pagination.actualPage+1 < numberOfPages">Next</span>
+  </div>
+</div>

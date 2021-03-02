@@ -1,0 +1,4 @@
+<div class="wrapper" (click)="showImageDetailed.emit(image)">
+  <img loading="lazy" [src]="image.cropped_picture">
+  <span>{{image.author}}</span>
+</div>

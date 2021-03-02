@@ -1,0 +1,19 @@
+.pagination-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 90%;
+  justify-items: center;
+  grid-auto-rows: 50px;
+  align-items: center;
+  span {
+    margin-right: 5px;
+    &.link {
+      color: #0044cc;
+      &:hover {
+        cursor: pointer;
+        color: #2200cc;
+      }
+    }
+  }
+}

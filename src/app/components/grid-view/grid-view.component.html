@@ -1,0 +1,37 @@
+<ng-container *ngIf="!(isSearching$ | async); else searching">
+
+  <ng-container *ngIf="(imagesResponse$ | async) as imagesResponse">
+    <div class="container">
+      <ng-container *ngIf="imagesResponse.length; else noResults">
+        <ng-container *ngFor="let item of imagesResponse">
+          <app-image [image]="item" (showImageDetailed)="openImage($event)"></app-image>
+        </ng-container>
+      </ng-container>
+    </div>
+    <app-pagination [pagination]="pagination$ | async"></app-pagination>
+  </ng-container>
+</ng-container>
+
+<ng-template #noResults>
+  Nothing to see here :(
+</ng-template>
+
+<ng-template #searching>
+  <ngx-spinner
+    bdColor = "rgba(0, 0, 0, 0.8)" size = "medium"
+    color = "#fff" type = "square-jelly-box"
+    [fullScreen] = "true"><p style="color: white" > Loading... </p>
+  </ngx-spinner>
+</ng-template>
+
+<div class="background-blur" [class.active]="show" (click)="toggleShow()"></div>
+<div class="itinerary-content" [class.active]="show">
+  <div class="wrapper-image" *ngIf="image">
+    <img loading="lazy" [src]="image.full_picture">
+    <div class="overlay">
+      <span class="overlay-text tags">{{image.tags}}</span>
+      <span class="overlay-text camera">{{image.camera}}</span>
+      <span class="overlay-text author">{{image.author}}</span>
+    </div>
+  </div>
+</div>
