@@ -29,7 +29,7 @@ Also was implemented a **fully functional pagination** like we can see on the pi
 
 ### Mobile views
 
-![image](https://user-images.githubusercontent.com/14813235/109698046-b6980580-7b6d-11eb-8de2-c3ce53c767be.png)
+![image](https://user-images.githubusercontent.com/14813235/109698298-08409000-7b6e-11eb-8341-ec3f304ff1bc.png)
 ![image](https://user-images.githubusercontent.com/14813235/109698076-be57aa00-7b6d-11eb-8826-ae696351b5f3.png)
 
 
